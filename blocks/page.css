@@ -1,0 +1,10 @@
+.page {
+	min-width: 320px;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:  #e5e5e5;
+	color: #1c1e20;
+	font-weight: 400;
+	font-family: "Raleway", "Arial", sans-serif;
+}

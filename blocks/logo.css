@@ -1,0 +1,26 @@
+.logo {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19px;
+
+  transition: opacity .3s ease;
+  text-decoration: none;
+
+  opacity: 1;
+  color: var(--page-text);
+}
+
+.logo:hover {
+  opacity: .8;
+}
+
+.logo:active {
+  opacity: .6;
+}
+
+@media screen and (min-width: 700px) {
+  .logo {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

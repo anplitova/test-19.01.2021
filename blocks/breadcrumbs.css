@@ -1,0 +1,36 @@
+.breadcrumbs {
+  display: flex;
+
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.breadcrumbs__item:not(:last-child):after {
+  font-size: 12px;
+
+  margin-left: 2px;
+
+  content: '/';
+}
+
+.breadcrumbs__link {
+  font-size: 13px;
+  line-height: 17px;
+
+  transition: border-color .3s ease;
+  text-decoration: none;
+
+  color: var(--page-text);
+  border-bottom: 1px solid transparent;
+}
+
+.breadcrumbs__link:hover {
+  border-color: var(--page-text);
+}

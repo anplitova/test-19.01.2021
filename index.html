@@ -11,6 +11,164 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page">
-    
+    <header class="header js-header">
+      <div class="header__top">
+        <a class="logo" href="#">lite.page</a>
+        <button class="header__menu-button js-menu-button" type="button">
+          <svg class="icon icon--menu-open" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="3" width="16" height="2" rx="1" fill="#1c1e20"/>
+            <rect x="2" y="9" width="16" height="2" rx="1" fill="#1c1e20"/>
+            <rect x="2" y="15" width="16" height="2" rx="1" fill="#1c1e20"/>
+          </svg>
+          <svg class="icon icon--menu-close" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5.414" y="4" width="15" height="2" rx="1" transform="rotate(45 5.414 4)" fill="#1c1e20"/>
+            <rect x="4" y="14.607" width="15" height="2" rx="1" transform="rotate(-45 4 14.607)" fill="#1c1e20"/>
+          </svg>
+        </button>
+      </div>
+      <div class="header__menu">
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">CRM</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Мои сайты</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Каталог</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Тарифы</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Блог</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Помощь</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <div class="profile__photo">
+            <a href="#">
+              <img src="./images/user.jpg" alt="Фотография пользователя Артем Городецкий" width="80" height="80">
+            </a>
+          </div>
+          <div class="profile__content">
+            <h2 class="profile__name">Артем Городецкий</h2>
+            <button class="profile__exit" type="button">Выйти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page__wrapper">
+      <aside class="page__aside aside">
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--back" href="#">Назад</a>
+          </li>
+          <li class="pagination__item m-hide">
+            <a class="pagination__link pagination__link--next" href="#">Вперед</a>
+          </li>
+        </ul>
+        <ul class="category">
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайтута</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link m-active" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+          <li class="category__item">
+            <a class="category__link" href="#">Доступ к сайту</a>
+          </li>
+        </ul>
+      </aside>
+      <main class="page__main">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Настройки сайта</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Доступ к сайту</a>
+          </li>
+        </ul>
+        <h1 class="page__title">Доступ к сайту</h1>
+        <form class="form js-form">
+          <h2 class="form__title">Настройка доступа к сайту</h2>
+          <p class="form__description">Контролируйте, кому доступен ваш сайт</p>
+          <fieldset class="form__fieldset">
+            <div class="form__flex">
+              <p class="form__legend">Интернет сайт</p>
+              <div>
+                <div class="form__row">
+                  <input id="radio-publish-site" class="form__radio js-form-radio" type="radio" name="setting-site" value="publish-site" checked>
+                  <label class="form__radio-label" for="radio-publish-site">Опубликовать сайт</label>
+                  <p class="form__radio-text">Доступно при оплаченном тарифном плане и купленном домене</p>
+                </div>
+                <div class="form__row">
+                  <input id="radio-protected-site" class="form__radio js-form-radio" type="radio" name="setting-site" value="protected-site">
+                  <label class="form__radio-label" for="radio-protected-site">Сайт защищен паролем</label>
+                  <p class="form__radio-text">Сайт увидит только тот, у кого есть пароль</p>
+                  <div class="form__password form__hide-block js-form-password">
+                    <label class="form__input-label" for="input-password">Введите пароль</label>
+                    <input id="input-password" class="form__input" type="password">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <input id="radio-private-site" class="form__radio js-form-radio" type="radio" name="setting-site" value="private-site">
+                  <label class="form__radio-label" for="radio-private-site">Приватный сайт</label>
+                  <p class="form__radio-text">Только авторы и владелец сайта смогут увидеть сайт</p>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="form__buttons">
+            <button class="form__button form__button--cansel" type="button">Отменить</button>
+            <button class="form__button form__button--save" type="submit">Сохранить</button>
+          </div>
+        </form>
+      </main>
+      <div class="alert js-alert">
+        <p class="alert__text">Настройки доступа к сайту успешно изменены</p>
+        <button class="alert__close js-alert-close" type="button">
+          <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="2" height="12" rx="1" transform="scale(-1 1) rotate(-45 .328 21.278)" fill="#fff"/>
+            <rect width="2" height="12" rx="1" transform="scale(-1 1) rotate(45 -9.328 -5.278)" fill="#fff"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

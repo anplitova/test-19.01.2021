@@ -1,10 +1,84 @@
 .page {
-	min-width: 320px;
-	max-width: 1920px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color:  #e5e5e5;
-	color: #1c1e20;
-	font-weight: 400;
-	font-family: "Raleway", "Arial", sans-serif;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
+
+  min-width: 320px;
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: var(--page-text);
+  background-color: var(--page-bg);
+}
+
+.page__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: calc(100vh - 60px);
+}
+
+.page__aside {
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-bottom: 31px;
+  padding-left: 16px;
+}
+
+.page__main {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.page__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 700px) {
+  .page__wrapper {
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  .page__aside {
+    margin-right: 50px;
+    padding-top: 56px;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .page__main {
+    padding-top: 34px;
+    padding-left: 0;
+  }
+
+  .page__title {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page__wrapper {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .page__aside {
+    padding-left: 0;
+  }
+
+  .page__main {
+    padding-right: 0;
+  }
 }
